@@ -1,0 +1,1722 @@
+{
+  "stageEpisode": 100,
+  "capturedAt": "2026-03-01T06:31:06.252Z",
+  "maxTrainingEpisodes": 300,
+  "totalEpisodesAtCapture": 100,
+  "trainingEpisodeIndexAtCapture": 100,
+  "modeAtCapture": "classic",
+  "difficultyAtCapture": "低难度",
+  "epsilon": 0.49041082070229397,
+  "passRateGlobal": 55.00000000000001,
+  "avgReward": 784.111500000003,
+  "rewardSeries": [
+    302.437500000001,
+    1127.9250000000036,
+    1132.137500000004,
+    308.8875000000007,
+    1131.7250000000022,
+    1116.6125000000038,
+    444.8250000000021,
+    1129.950000000004,
+    585.3500000000029,
+    1131.2500000000039,
+    229.63750000000041,
+    1136.3750000000039,
+    259.43750000000057,
+    1128.6250000000036,
+    223.82500000000047,
+    1121.2250000000038,
+    1118.262500000004,
+    435.85000000000207,
+    1143.4875000000038,
+    189.72500000000028,
+    1135.1375000000037,
+    333.8875000000015,
+    1123.9250000000038,
+    160.8,
+    1123.4375000000036,
+    1125.162500000004,
+    1137.5625000000036,
+    1136.7500000000032,
+    1127.0500000000034,
+    1120.537500000003,
+    418.4375000000018,
+    1124.0500000000034,
+    1120.962500000004,
+    340.6750000000013,
+    1122.762500000004,
+    1110.0500000000034,
+    667.8250000000032,
+    504.9000000000024,
+    1125.1250000000036,
+    1113.475000000003,
+    1130.3375000000037,
+    266.30000000000064,
+    1130.475000000004,
+    475.5125000000023,
+    1117.0750000000037,
+    65.36249999999984,
+    317.62500000000114,
+    1147.4375000000036,
+    1116.9250000000027,
+    1133.025000000003,
+    531.4250000000012,
+    595.3375000000023,
+    455.0625000000018,
+    1131.1750000000027,
+    280.48750000000086,
+    1128.7250000000026,
+    467.4250000000017,
+    160.66249999999974,
+    376.1500000000013,
+    1143.237500000004,
+    1114.612500000003,
+    574.7250000000024,
+    1169.600000000003,
+    1153.4625000000035,
+    256.97500000000036,
+    1129.8125000000034,
+    -37.412499999999476,
+    1119.8500000000026,
+    1156.987500000003,
+    250.02500000000032,
+    248.92500000000032,
+    1162.512500000004,
+    413.26250000000135,
+    599.5500000000028,
+    1139.3750000000036,
+    1138.2375000000036,
+    469.200000000002,
+    1127.762500000003,
+    1154.4375000000034,
+    237.6750000000001,
+    1145.5375000000038,
+    1113.7125000000033,
+    320.2250000000009,
+    1146.2500000000039,
+    334.3625000000013,
+    1155.200000000004,
+    1154.3000000000034,
+    427.11250000000126,
+    372.86250000000143,
+    1156.0000000000036,
+    1152.0625000000032,
+    505.6500000000025,
+    358.7875000000016,
+    1146.987500000004,
+    172.88750000000007,
+    627.5250000000025,
+    417.46250000000157,
+    1156.0000000000036,
+    76.97499999999982,
+    1151.850000000004
+  ],
+  "rewardMovingAverage": [
+    302.437500000001,
+    715.1812500000024,
+    854.1666666666696,
+    717.8468750000023,
+    800.6225000000023,
+    853.2875000000025,
+    794.9357142857168,
+    836.8125000000027,
+    808.872222222225,
+    841.110000000003,
+    833.8300000000029,
+    834.6750000000029,
+    747.4050000000025,
+    829.3787500000028,
+    738.5887500000026,
+    739.0500000000027,
+    806.3937500000027,
+    736.9837500000025,
+    792.7975000000026,
+    698.6450000000024,
+    789.1950000000027,
+    708.9462500000024,
+    795.3950000000025,
+    698.6125000000022,
+    788.5737500000025,
+    788.9675000000025,
+    790.8975000000024,
+    860.9875000000026,
+    859.3437500000025,
+    952.4250000000027,
+    880.7550000000025,
+    959.7712500000027,
+    959.4750000000025,
+    977.4625000000027,
+    977.3950000000028,
+    975.8837500000027,
+    928.9100000000026,
+    865.7250000000025,
+    865.5325000000026,
+    864.8262500000026,
+    936.0162500000027,
+    850.2412500000025,
+    851.1925000000026,
+    864.6762500000028,
+    864.1075000000028,
+    759.6387500000025,
+    724.6187500000021,
+    788.8725000000023,
+    788.0525000000022,
+    790.0075000000022,
+    730.1162500000021,
+    763.0200000000023,
+    695.478750000002,
+    761.0450000000021,
+    677.3862500000018,
+    783.7225000000021,
+    798.7025000000023,
+    700.0250000000018,
+    625.9475000000017,
+    626.9687500000017,
+    685.287500000002,
+    683.2262500000019,
+    754.680000000002,
+    756.9087500000021,
+    754.557500000002,
+    754.6662500000023,
+    704.182500000002,
+    800.1012500000023,
+    878.1850000000024,
+    788.863750000002,
+    702.2950000000017,
+    761.073750000002,
+    685.4400000000018,
+    630.0487500000017,
+    718.2887500000021,
+    719.131250000002,
+    769.7925000000021,
+    770.5837500000022,
+    770.3287500000022,
+    769.0937500000022,
+    858.7550000000025,
+    853.8750000000024,
+    844.5712500000024,
+    899.2412500000024,
+    818.7400000000022,
+    820.4362500000022,
+    888.9462500000024,
+    818.8812500000022,
+    740.7237500000019,
+    832.5562500000024,
+    833.2087500000023,
+    772.4025000000023,
+    776.2587500000024,
+    776.3325000000025,
+    760.1850000000023,
+    707.4175000000021,
+    633.7337500000019,
+    706.6225000000022,
+    677.0337500000021,
+    676.6187500000021
+  ],
+  "passRateSeries": [
+    0,
+    50,
+    66.66666666666666,
+    50,
+    60,
+    66.66666666666666,
+    57.14285714285714,
+    62.5,
+    55.55555555555556,
+    60,
+    54.54545454545454,
+    58.333333333333336,
+    53.84615384615385,
+    57.14285714285714,
+    53.333333333333336,
+    56.25,
+    58.82352941176471,
+    55.55555555555556,
+    57.89473684210527,
+    55.00000000000001,
+    57.14285714285714,
+    54.54545454545454,
+    56.52173913043478,
+    54.166666666666664,
+    56.00000000000001,
+    57.692307692307686,
+    59.25925925925925,
+    60.71428571428571,
+    62.06896551724138,
+    63.33333333333333,
+    61.29032258064516,
+    62.5,
+    63.63636363636363,
+    61.76470588235294,
+    62.857142857142854,
+    63.888888888888886,
+    62.16216216216216,
+    60.526315789473685,
+    61.53846153846154,
+    62.5,
+    63.41463414634146,
+    61.904761904761905,
+    62.7906976744186,
+    61.36363636363637,
+    62.22222222222222,
+    60.86956521739131,
+    59.57446808510638,
+    60.416666666666664,
+    61.224489795918366,
+    62,
+    62,
+    60,
+    57.99999999999999,
+    60,
+    57.99999999999999,
+    57.99999999999999,
+    57.99999999999999,
+    56.00000000000001,
+    56.00000000000001,
+    56.00000000000001,
+    57.99999999999999,
+    56.00000000000001,
+    57.99999999999999,
+    57.99999999999999,
+    57.99999999999999,
+    57.99999999999999,
+    56.00000000000001,
+    57.99999999999999,
+    57.99999999999999,
+    57.99999999999999,
+    56.00000000000001,
+    57.99999999999999,
+    56.00000000000001,
+    56.00000000000001,
+    56.00000000000001,
+    56.00000000000001,
+    54,
+    54,
+    54,
+    52,
+    54,
+    54,
+    52,
+    54,
+    52,
+    52,
+    54,
+    54,
+    52,
+    52,
+    52,
+    52,
+    50,
+    52,
+    50,
+    50,
+    50,
+    50,
+    48,
+    48
+  ],
+  "passRateWindow": 50,
+  "rewardMovingAvgWindow": 10,
+  "history": [
+    {
+      "episode": 1,
+      "reward": 302.437500000001,
+      "success": 0,
+      "survivalSteps": 237,
+      "endReason": "death",
+      "actionCounts": [
+        14,
+        167,
+        18,
+        20,
+        18
+      ]
+    },
+    {
+      "episode": 2,
+      "reward": 1127.9250000000036,
+      "success": 1,
+      "survivalSteps": 395,
+      "endReason": "goal",
+      "actionCounts": [
+        30,
+        295,
+        18,
+        25,
+        27
+      ]
+    },
+    {
+      "episode": 3,
+      "reward": 1132.137500000004,
+      "success": 1,
+      "survivalSteps": 407,
+      "endReason": "goal",
+      "actionCounts": [
+        37,
+        306,
+        20,
+        23,
+        21
+      ]
+    },
+    {
+      "episode": 4,
+      "reward": 308.8875000000007,
+      "success": 0,
+      "survivalSteps": 279,
+      "endReason": "death",
+      "actionCounts": [
+        37,
+        186,
+        15,
+        24,
+        17
+      ]
+    },
+    {
+      "episode": 5,
+      "reward": 1131.7250000000022,
+      "success": 1,
+      "survivalSteps": 537,
+      "endReason": "goal",
+      "actionCounts": [
+        73,
+        347,
+        37,
+        40,
+        40
+      ]
+    },
+    {
+      "episode": 6,
+      "reward": 1116.6125000000038,
+      "success": 1,
+      "survivalSteps": 399,
+      "endReason": "goal",
+      "actionCounts": [
+        33,
+        288,
+        26,
+        20,
+        32
+      ]
+    },
+    {
+      "episode": 7,
+      "reward": 444.8250000000021,
+      "success": 0,
+      "survivalSteps": 279,
+      "endReason": "death",
+      "actionCounts": [
+        23,
+        205,
+        22,
+        12,
+        17
+      ]
+    },
+    {
+      "episode": 8,
+      "reward": 1129.950000000004,
+      "success": 1,
+      "survivalSteps": 417,
+      "endReason": "goal",
+      "actionCounts": [
+        37,
+        304,
+        22,
+        27,
+        27
+      ]
+    },
+    {
+      "episode": 9,
+      "reward": 585.3500000000029,
+      "success": 0,
+      "survivalSteps": 359,
+      "endReason": "death",
+      "actionCounts": [
+        30,
+        263,
+        20,
+        23,
+        23
+      ]
+    },
+    {
+      "episode": 10,
+      "reward": 1131.2500000000039,
+      "success": 1,
+      "survivalSteps": 407,
+      "endReason": "goal",
+      "actionCounts": [
+        38,
+        302,
+        26,
+        19,
+        22
+      ]
+    },
+    {
+      "episode": 11,
+      "reward": 229.63750000000041,
+      "success": 0,
+      "survivalSteps": 169,
+      "endReason": "death",
+      "actionCounts": [
+        14,
+        128,
+        7,
+        10,
+        10
+      ]
+    },
+    {
+      "episode": 12,
+      "reward": 1136.3750000000039,
+      "success": 1,
+      "survivalSteps": 409,
+      "endReason": "goal",
+      "actionCounts": [
+        41,
+        307,
+        22,
+        19,
+        20
+      ]
+    },
+    {
+      "episode": 13,
+      "reward": 259.43750000000057,
+      "success": 0,
+      "survivalSteps": 198,
+      "endReason": "death",
+      "actionCounts": [
+        20,
+        132,
+        14,
+        9,
+        23
+      ]
+    },
+    {
+      "episode": 14,
+      "reward": 1128.6250000000036,
+      "success": 1,
+      "survivalSteps": 393,
+      "endReason": "goal",
+      "actionCounts": [
+        28,
+        294,
+        18,
+        26,
+        27
+      ]
+    },
+    {
+      "episode": 15,
+      "reward": 223.82500000000047,
+      "success": 0,
+      "survivalSteps": 160,
+      "endReason": "death",
+      "actionCounts": [
+        9,
+        114,
+        15,
+        6,
+        16
+      ]
+    },
+    {
+      "episode": 16,
+      "reward": 1121.2250000000038,
+      "success": 1,
+      "survivalSteps": 398,
+      "endReason": "goal",
+      "actionCounts": [
+        35,
+        287,
+        21,
+        20,
+        35
+      ]
+    },
+    {
+      "episode": 17,
+      "reward": 1118.262500000004,
+      "success": 1,
+      "survivalSteps": 403,
+      "endReason": "goal",
+      "actionCounts": [
+        27,
+        296,
+        26,
+        28,
+        26
+      ]
+    },
+    {
+      "episode": 18,
+      "reward": 435.85000000000207,
+      "success": 0,
+      "survivalSteps": 270,
+      "endReason": "death",
+      "actionCounts": [
+        21,
+        186,
+        19,
+        12,
+        32
+      ]
+    },
+    {
+      "episode": 19,
+      "reward": 1143.4875000000038,
+      "success": 1,
+      "survivalSteps": 404,
+      "endReason": "goal",
+      "actionCounts": [
+        32,
+        292,
+        28,
+        21,
+        31
+      ]
+    },
+    {
+      "episode": 20,
+      "reward": 189.72500000000028,
+      "success": 0,
+      "survivalSteps": 170,
+      "endReason": "death",
+      "actionCounts": [
+        20,
+        123,
+        7,
+        7,
+        13
+      ]
+    },
+    {
+      "episode": 21,
+      "reward": 1135.1375000000037,
+      "success": 1,
+      "survivalSteps": 438,
+      "endReason": "goal",
+      "actionCounts": [
+        35,
+        292,
+        40,
+        26,
+        45
+      ]
+    },
+    {
+      "episode": 22,
+      "reward": 333.8875000000015,
+      "success": 0,
+      "survivalSteps": 236,
+      "endReason": "death",
+      "actionCounts": [
+        19,
+        159,
+        17,
+        14,
+        27
+      ]
+    },
+    {
+      "episode": 23,
+      "reward": 1123.9250000000038,
+      "success": 1,
+      "survivalSteps": 381,
+      "endReason": "goal",
+      "actionCounts": [
+        36,
+        283,
+        14,
+        14,
+        34
+      ]
+    },
+    {
+      "episode": 24,
+      "reward": 160.8,
+      "success": 0,
+      "survivalSteps": 205,
+      "endReason": "death",
+      "actionCounts": [
+        22,
+        129,
+        18,
+        19,
+        17
+      ]
+    },
+    {
+      "episode": 25,
+      "reward": 1123.4375000000036,
+      "success": 1,
+      "survivalSteps": 397,
+      "endReason": "goal",
+      "actionCounts": [
+        37,
+        287,
+        18,
+        19,
+        36
+      ]
+    },
+    {
+      "episode": 26,
+      "reward": 1125.162500000004,
+      "success": 1,
+      "survivalSteps": 367,
+      "endReason": "goal",
+      "actionCounts": [
+        27,
+        275,
+        22,
+        12,
+        31
+      ]
+    },
+    {
+      "episode": 27,
+      "reward": 1137.5625000000036,
+      "success": 1,
+      "survivalSteps": 457,
+      "endReason": "goal",
+      "actionCounts": [
+        54,
+        298,
+        33,
+        22,
+        50
+      ]
+    },
+    {
+      "episode": 28,
+      "reward": 1136.7500000000032,
+      "success": 1,
+      "survivalSteps": 509,
+      "endReason": "goal",
+      "actionCounts": [
+        64,
+        303,
+        35,
+        36,
+        71
+      ]
+    },
+    {
+      "episode": 29,
+      "reward": 1127.0500000000034,
+      "success": 1,
+      "survivalSteps": 466,
+      "endReason": "goal",
+      "actionCounts": [
+        44,
+        314,
+        34,
+        37,
+        37
+      ]
+    },
+    {
+      "episode": 30,
+      "reward": 1120.537500000003,
+      "success": 1,
+      "survivalSteps": 459,
+      "endReason": "goal",
+      "actionCounts": [
+        53,
+        322,
+        26,
+        30,
+        28
+      ]
+    },
+    {
+      "episode": 31,
+      "reward": 418.4375000000018,
+      "success": 0,
+      "survivalSteps": 256,
+      "endReason": "death",
+      "actionCounts": [
+        21,
+        182,
+        15,
+        12,
+        26
+      ]
+    },
+    {
+      "episode": 32,
+      "reward": 1124.0500000000034,
+      "success": 1,
+      "survivalSteps": 466,
+      "endReason": "goal",
+      "actionCounts": [
+        61,
+        308,
+        19,
+        29,
+        49
+      ]
+    },
+    {
+      "episode": 33,
+      "reward": 1120.962500000004,
+      "success": 1,
+      "survivalSteps": 366,
+      "endReason": "goal",
+      "actionCounts": [
+        17,
+        271,
+        27,
+        19,
+        32
+      ]
+    },
+    {
+      "episode": 34,
+      "reward": 340.6750000000013,
+      "success": 0,
+      "survivalSteps": 252,
+      "endReason": "death",
+      "actionCounts": [
+        22,
+        170,
+        16,
+        17,
+        27
+      ]
+    },
+    {
+      "episode": 35,
+      "reward": 1122.762500000004,
+      "success": 1,
+      "survivalSteps": 390,
+      "endReason": "goal",
+      "actionCounts": [
+        33,
+        286,
+        25,
+        16,
+        30
+      ]
+    },
+    {
+      "episode": 36,
+      "reward": 1110.0500000000034,
+      "success": 1,
+      "survivalSteps": 388,
+      "endReason": "goal",
+      "actionCounts": [
+        30,
+        280,
+        17,
+        22,
+        39
+      ]
+    },
+    {
+      "episode": 37,
+      "reward": 667.8250000000032,
+      "success": 0,
+      "survivalSteps": 461,
+      "endReason": "death",
+      "actionCounts": [
+        60,
+        303,
+        37,
+        20,
+        41
+      ]
+    },
+    {
+      "episode": 38,
+      "reward": 504.9000000000024,
+      "success": 0,
+      "survivalSteps": 330,
+      "endReason": "death",
+      "actionCounts": [
+        28,
+        213,
+        28,
+        24,
+        37
+      ]
+    },
+    {
+      "episode": 39,
+      "reward": 1125.1250000000036,
+      "success": 1,
+      "survivalSteps": 392,
+      "endReason": "goal",
+      "actionCounts": [
+        33,
+        282,
+        15,
+        22,
+        40
+      ]
+    },
+    {
+      "episode": 40,
+      "reward": 1113.475000000003,
+      "success": 1,
+      "survivalSteps": 443,
+      "endReason": "goal",
+      "actionCounts": [
+        45,
+        305,
+        30,
+        28,
+        35
+      ]
+    },
+    {
+      "episode": 41,
+      "reward": 1130.3375000000037,
+      "success": 1,
+      "survivalSteps": 383,
+      "endReason": "goal",
+      "actionCounts": [
+        29,
+        290,
+        16,
+        21,
+        27
+      ]
+    },
+    {
+      "episode": 42,
+      "reward": 266.30000000000064,
+      "success": 0,
+      "survivalSteps": 188,
+      "endReason": "death",
+      "actionCounts": [
+        12,
+        132,
+        10,
+        11,
+        23
+      ]
+    },
+    {
+      "episode": 43,
+      "reward": 1130.475000000004,
+      "success": 1,
+      "survivalSteps": 393,
+      "endReason": "goal",
+      "actionCounts": [
+        35,
+        297,
+        22,
+        17,
+        22
+      ]
+    },
+    {
+      "episode": 44,
+      "reward": 475.5125000000023,
+      "success": 0,
+      "survivalSteps": 287,
+      "endReason": "death",
+      "actionCounts": [
+        22,
+        201,
+        22,
+        12,
+        30
+      ]
+    },
+    {
+      "episode": 45,
+      "reward": 1117.0750000000037,
+      "success": 1,
+      "survivalSteps": 384,
+      "endReason": "goal",
+      "actionCounts": [
+        31,
+        275,
+        19,
+        18,
+        41
+      ]
+    },
+    {
+      "episode": 46,
+      "reward": 65.36249999999984,
+      "success": 0,
+      "survivalSteps": 109,
+      "endReason": "death",
+      "actionCounts": [
+        9,
+        74,
+        10,
+        8,
+        8
+      ]
+    },
+    {
+      "episode": 47,
+      "reward": 317.62500000000114,
+      "success": 0,
+      "survivalSteps": 213,
+      "endReason": "death",
+      "actionCounts": [
+        10,
+        155,
+        13,
+        17,
+        18
+      ]
+    },
+    {
+      "episode": 48,
+      "reward": 1147.4375000000036,
+      "success": 1,
+      "survivalSteps": 442,
+      "endReason": "goal",
+      "actionCounts": [
+        40,
+        299,
+        25,
+        32,
+        46
+      ]
+    },
+    {
+      "episode": 49,
+      "reward": 1116.9250000000027,
+      "success": 1,
+      "survivalSteps": 512,
+      "endReason": "goal",
+      "actionCounts": [
+        66,
+        316,
+        39,
+        35,
+        56
+      ]
+    },
+    {
+      "episode": 50,
+      "reward": 1133.025000000003,
+      "success": 1,
+      "survivalSteps": 465,
+      "endReason": "goal",
+      "actionCounts": [
+        41,
+        304,
+        28,
+        41,
+        51
+      ]
+    },
+    {
+      "episode": 51,
+      "reward": 531.4250000000012,
+      "success": 0,
+      "survivalSteps": 393,
+      "endReason": "death",
+      "actionCounts": [
+        58,
+        240,
+        30,
+        15,
+        50
+      ]
+    },
+    {
+      "episode": 52,
+      "reward": 595.3375000000023,
+      "success": 0,
+      "survivalSteps": 450,
+      "endReason": "death",
+      "actionCounts": [
+        55,
+        296,
+        30,
+        35,
+        34
+      ]
+    },
+    {
+      "episode": 53,
+      "reward": 455.0625000000018,
+      "success": 0,
+      "survivalSteps": 321,
+      "endReason": "death",
+      "actionCounts": [
+        33,
+        211,
+        27,
+        18,
+        32
+      ]
+    },
+    {
+      "episode": 54,
+      "reward": 1131.1750000000027,
+      "success": 1,
+      "survivalSteps": 444,
+      "endReason": "goal",
+      "actionCounts": [
+        46,
+        300,
+        24,
+        29,
+        45
+      ]
+    },
+    {
+      "episode": 55,
+      "reward": 280.48750000000086,
+      "success": 0,
+      "survivalSteps": 195,
+      "endReason": "death",
+      "actionCounts": [
+        14,
+        136,
+        11,
+        10,
+        24
+      ]
+    },
+    {
+      "episode": 56,
+      "reward": 1128.7250000000026,
+      "success": 1,
+      "survivalSteps": 536,
+      "endReason": "goal",
+      "actionCounts": [
+        74,
+        332,
+        43,
+        34,
+        53
+      ]
+    },
+    {
+      "episode": 57,
+      "reward": 467.4250000000017,
+      "success": 0,
+      "survivalSteps": 356,
+      "endReason": "death",
+      "actionCounts": [
+        53,
+        219,
+        17,
+        21,
+        46
+      ]
+    },
+    {
+      "episode": 58,
+      "reward": 160.66249999999974,
+      "success": 0,
+      "survivalSteps": 150,
+      "endReason": "death",
+      "actionCounts": [
+        12,
+        105,
+        9,
+        11,
+        13
+      ]
+    },
+    {
+      "episode": 59,
+      "reward": 376.1500000000013,
+      "success": 0,
+      "survivalSteps": 261,
+      "endReason": "death",
+      "actionCounts": [
+        23,
+        187,
+        13,
+        21,
+        17
+      ]
+    },
+    {
+      "episode": 60,
+      "reward": 1143.237500000004,
+      "success": 1,
+      "survivalSteps": 399,
+      "endReason": "goal",
+      "actionCounts": [
+        34,
+        273,
+        24,
+        18,
+        50
+      ]
+    },
+    {
+      "episode": 61,
+      "reward": 1114.612500000003,
+      "success": 1,
+      "survivalSteps": 481,
+      "endReason": "goal",
+      "actionCounts": [
+        50,
+        300,
+        39,
+        33,
+        59
+      ]
+    },
+    {
+      "episode": 62,
+      "reward": 574.7250000000024,
+      "success": 0,
+      "survivalSteps": 372,
+      "endReason": "death",
+      "actionCounts": [
+        38,
+        251,
+        21,
+        26,
+        36
+      ]
+    },
+    {
+      "episode": 63,
+      "reward": 1169.600000000003,
+      "success": 1,
+      "survivalSteps": 526,
+      "endReason": "goal",
+      "actionCounts": [
+        72,
+        335,
+        35,
+        36,
+        48
+      ]
+    },
+    {
+      "episode": 64,
+      "reward": 1153.4625000000035,
+      "success": 1,
+      "survivalSteps": 409,
+      "endReason": "goal",
+      "actionCounts": [
+        43,
+        292,
+        13,
+        20,
+        41
+      ]
+    },
+    {
+      "episode": 65,
+      "reward": 256.97500000000036,
+      "success": 0,
+      "survivalSteps": 229,
+      "endReason": "death",
+      "actionCounts": [
+        22,
+        156,
+        10,
+        23,
+        18
+      ]
+    },
+    {
+      "episode": 66,
+      "reward": 1129.8125000000034,
+      "success": 1,
+      "survivalSteps": 459,
+      "endReason": "goal",
+      "actionCounts": [
+        54,
+        297,
+        41,
+        20,
+        47
+      ]
+    },
+    {
+      "episode": 67,
+      "reward": -37.412499999999476,
+      "success": 0,
+      "survivalSteps": 274,
+      "endReason": "loop",
+      "actionCounts": [
+        100,
+        155,
+        5,
+        5,
+        9
+      ]
+    },
+    {
+      "episode": 68,
+      "reward": 1119.8500000000026,
+      "success": 1,
+      "survivalSteps": 457,
+      "endReason": "goal",
+      "actionCounts": [
+        60,
+        298,
+        25,
+        20,
+        54
+      ]
+    },
+    {
+      "episode": 69,
+      "reward": 1156.987500000003,
+      "success": 1,
+      "survivalSteps": 484,
+      "endReason": "goal",
+      "actionCounts": [
+        64,
+        310,
+        25,
+        29,
+        56
+      ]
+    },
+    {
+      "episode": 70,
+      "reward": 250.02500000000032,
+      "success": 0,
+      "survivalSteps": 186,
+      "endReason": "death",
+      "actionCounts": [
+        15,
+        128,
+        9,
+        13,
+        21
+      ]
+    },
+    {
+      "episode": 71,
+      "reward": 248.92500000000032,
+      "success": 0,
+      "survivalSteps": 197,
+      "endReason": "death",
+      "actionCounts": [
+        14,
+        126,
+        12,
+        16,
+        29
+      ]
+    },
+    {
+      "episode": 72,
+      "reward": 1162.512500000004,
+      "success": 1,
+      "survivalSteps": 441,
+      "endReason": "goal",
+      "actionCounts": [
+        43,
+        288,
+        32,
+        21,
+        57
+      ]
+    },
+    {
+      "episode": 73,
+      "reward": 413.26250000000135,
+      "success": 0,
+      "survivalSteps": 268,
+      "endReason": "death",
+      "actionCounts": [
+        27,
+        184,
+        14,
+        14,
+        29
+      ]
+    },
+    {
+      "episode": 74,
+      "reward": 599.5500000000028,
+      "success": 0,
+      "survivalSteps": 363,
+      "endReason": "death",
+      "actionCounts": [
+        37,
+        240,
+        25,
+        16,
+        45
+      ]
+    },
+    {
+      "episode": 75,
+      "reward": 1139.3750000000036,
+      "success": 1,
+      "survivalSteps": 412,
+      "endReason": "goal",
+      "actionCounts": [
+        33,
+        282,
+        19,
+        27,
+        51
+      ]
+    },
+    {
+      "episode": 76,
+      "reward": 1138.2375000000036,
+      "success": 1,
+      "survivalSteps": 416,
+      "endReason": "goal",
+      "actionCounts": [
+        38,
+        273,
+        14,
+        27,
+        64
+      ]
+    },
+    {
+      "episode": 77,
+      "reward": 469.200000000002,
+      "success": 0,
+      "survivalSteps": 277,
+      "endReason": "death",
+      "actionCounts": [
+        23,
+        200,
+        11,
+        14,
+        29
+      ]
+    },
+    {
+      "episode": 78,
+      "reward": 1127.762500000003,
+      "success": 1,
+      "survivalSteps": 455,
+      "endReason": "goal",
+      "actionCounts": [
+        50,
+        301,
+        23,
+        28,
+        53
+      ]
+    },
+    {
+      "episode": 79,
+      "reward": 1154.4375000000034,
+      "success": 1,
+      "survivalSteps": 492,
+      "endReason": "goal",
+      "actionCounts": [
+        58,
+        289,
+        36,
+        32,
+        77
+      ]
+    },
+    {
+      "episode": 80,
+      "reward": 237.6750000000001,
+      "success": 0,
+      "survivalSteps": 214,
+      "endReason": "death",
+      "actionCounts": [
+        22,
+        144,
+        11,
+        13,
+        24
+      ]
+    },
+    {
+      "episode": 81,
+      "reward": 1145.5375000000038,
+      "success": 1,
+      "survivalSteps": 421,
+      "endReason": "goal",
+      "actionCounts": [
+        35,
+        298,
+        20,
+        29,
+        39
+      ]
+    },
+    {
+      "episode": 82,
+      "reward": 1113.7125000000033,
+      "success": 1,
+      "survivalSteps": 402,
+      "endReason": "goal",
+      "actionCounts": [
+        29,
+        249,
+        26,
+        24,
+        74
+      ]
+    },
+    {
+      "episode": 83,
+      "reward": 320.2250000000009,
+      "success": 0,
+      "survivalSteps": 273,
+      "endReason": "death",
+      "actionCounts": [
+        37,
+        177,
+        20,
+        9,
+        30
+      ]
+    },
+    {
+      "episode": 84,
+      "reward": 1146.2500000000039,
+      "success": 1,
+      "survivalSteps": 385,
+      "endReason": "goal",
+      "actionCounts": [
+        28,
+        281,
+        17,
+        19,
+        40
+      ]
+    },
+    {
+      "episode": 85,
+      "reward": 334.3625000000013,
+      "success": 0,
+      "survivalSteps": 216,
+      "endReason": "death",
+      "actionCounts": [
+        18,
+        160,
+        13,
+        9,
+        16
+      ]
+    },
+    {
+      "episode": 86,
+      "reward": 1155.200000000004,
+      "success": 1,
+      "survivalSteps": 373,
+      "endReason": "goal",
+      "actionCounts": [
+        20,
+        281,
+        12,
+        25,
+        35
+      ]
+    },
+    {
+      "episode": 87,
+      "reward": 1154.3000000000034,
+      "success": 1,
+      "survivalSteps": 411,
+      "endReason": "goal",
+      "actionCounts": [
+        43,
+        296,
+        13,
+        21,
+        38
+      ]
+    },
+    {
+      "episode": 88,
+      "reward": 427.11250000000126,
+      "success": 0,
+      "survivalSteps": 325,
+      "endReason": "death",
+      "actionCounts": [
+        38,
+        213,
+        18,
+        20,
+        36
+      ]
+    },
+    {
+      "episode": 89,
+      "reward": 372.86250000000143,
+      "success": 0,
+      "survivalSteps": 238,
+      "endReason": "death",
+      "actionCounts": [
+        22,
+        165,
+        11,
+        11,
+        29
+      ]
+    },
+    {
+      "episode": 90,
+      "reward": 1156.0000000000036,
+      "success": 1,
+      "survivalSteps": 388,
+      "endReason": "goal",
+      "actionCounts": [
+        32,
+        291,
+        20,
+        17,
+        28
+      ]
+    },
+    {
+      "episode": 91,
+      "reward": 1152.0625000000032,
+      "success": 1,
+      "survivalSteps": 445,
+      "endReason": "goal",
+      "actionCounts": [
+        53,
+        281,
+        25,
+        16,
+        70
+      ]
+    },
+    {
+      "episode": 92,
+      "reward": 505.6500000000025,
+      "success": 0,
+      "survivalSteps": 295,
+      "endReason": "death",
+      "actionCounts": [
+        16,
+        205,
+        23,
+        20,
+        31
+      ]
+    },
+    {
+      "episode": 93,
+      "reward": 358.7875000000016,
+      "success": 0,
+      "survivalSteps": 231,
+      "endReason": "death",
+      "actionCounts": [
+        10,
+        149,
+        16,
+        18,
+        38
+      ]
+    },
+    {
+      "episode": 94,
+      "reward": 1146.987500000004,
+      "success": 1,
+      "survivalSteps": 369,
+      "endReason": "goal",
+      "actionCounts": [
+        21,
+        273,
+        21,
+        18,
+        36
+      ]
+    },
+    {
+      "episode": 95,
+      "reward": 172.88750000000007,
+      "success": 0,
+      "survivalSteps": 158,
+      "endReason": "death",
+      "actionCounts": [
+        12,
+        112,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "episode": 96,
+      "reward": 627.5250000000025,
+      "success": 0,
+      "survivalSteps": 399,
+      "endReason": "death",
+      "actionCounts": [
+        56,
+        257,
+        19,
+        14,
+        53
+      ]
+    },
+    {
+      "episode": 97,
+      "reward": 417.46250000000157,
+      "success": 0,
+      "survivalSteps": 242,
+      "endReason": "death",
+      "actionCounts": [
+        18,
+        179,
+        10,
+        12,
+        23
+      ]
+    },
+    {
+      "episode": 98,
+      "reward": 1156.0000000000036,
+      "success": 1,
+      "survivalSteps": 387,
+      "endReason": "goal",
+      "actionCounts": [
+        33,
+        287,
+        19,
+        16,
+        32
+      ]
+    },
+    {
+      "episode": 99,
+      "reward": 76.97499999999982,
+      "success": 0,
+      "survivalSteps": 112,
+      "endReason": "death",
+      "actionCounts": [
+        15,
+        77,
+        4,
+        4,
+        12
+      ]
+    },
+    {
+      "episode": 100,
+      "reward": 1151.850000000004,
+      "success": 1,
+      "survivalSteps": 362,
+      "endReason": "goal",
+      "actionCounts": [
+        21,
+        281,
+        16,
+        16,
+        28
+      ]
+    }
+  ]
+}
