@@ -1,71 +1,99 @@
-# CDS524 DQN 平台跳跃竞速作业
+# CDS524 Assignment 1 – Platformer DQN (Web)
 
-本项目实现了一个基于 **Pygame + PyTorch DQN** 的 2D 横版平台跳跃闯关竞速系统，满足以下模式：
+## 1) Project Overview
+This assignment implements a browser-based side-scrolling platformer with a DQN-controlled AI agent.  
+The objective is to train the agent to maximize cumulative reward and reach the goal flag under changing maps.
 
-- 玩家手动闯关（`human`）
-- AI 自主闯关（`ai`）
-- 人机同屏竞速（`race`）
+## 2) Rubric Mapping
+- **Game Design (10 marks)**: explicit objective/rules, 16-dim state space, 5-action space, reward shaping with clear termination rules.
+- **Q-Learning Implementation (10 marks)**: DQN with epsilon-greedy exploration, replay memory, online/target networks, and periodic target sync.
+- **Game Interaction (10 marks)**: HTML5 Canvas gameplay, keyboard controls, and real-time dashboards.
+- **Documentation & Delivery (10 marks)**: reproducible run path, report template, and deliverable-ready project structure.
 
-## 1. 环境要求
+## 3) Runtime and Dependencies
+- Browser-based (Chrome / Edge / Firefox)
+- No build step required
+- External dependency via CDN:
+  - Chart.js (training dashboard charts)
 
-- Python 3.8+
-- Windows / Linux / macOS
+## 4) Run Instructions
+1. Open `code/index.html` in a browser (or run a local static server and open it).
+2. Controls:
+   - `← / →`: move
+   - `↑`: jump
+   - `Y`: start
+   - `R`: restart
+   - `ESC`: back to start
+3. Use the top controls to switch mode, speed, and max episodes.
 
-## 2. 安装依赖
+## 5) Environment Design
 
-```bash
-pip install -r requirements.txt
-```
+### 5.1 State Space
+- 16-dimensional normalized state vector (`stateDim = 16`), including:
+  - AI position and velocity
+  - nearest spike/platform/coin features
+  - progress and step-related context
 
-## 3. 训练 DQN
+### 5.2 Action Space
+- 5 discrete mutually exclusive actions:
+  - `0`: LEFT
+  - `1`: RIGHT
+  - `2`: JUMP
+  - `3`: LEFT_JUMP
+  - `4`: RIGHT_JUMP
 
-```bash
-python train_dqn.py
-```
+### 5.3 Curriculum / Level Sampling
+- Early episodes: `classic` dominant
+- Mid episodes: `classic + zigzag`
+- Later episodes: random among `classic / zigzag / gaps`
 
-训练输出：
+### 5.4 Teacher Guidance
+- Enabled in early training and linearly decays by episode index
+- Current configuration:
+  - `teacherAssistMaxEpisodes = 180`
+  - `teacherOverrideProbStart = 0.35`
+  - `teacherOverrideProbEnd = 0.06`
+  - imitation bonus applied when action matches teacher suggestion
 
-- 模型权重：`checkpoints/dqn_platformer.pth`
-- 学习曲线：`outputs/training_curve.png`
+## 6) DQN Implementation Summary
 
-## 4. 运行可交互UI
+### 6.1 Network & Hyperparameters (current code)
+- Network: `16 -> 256 -> 128 -> 64 -> 5` (ReLU hidden layers)
+- Optimizer: Adam
+- Learning rate: `0.001`
+- Discount factor (`gamma`): `0.95`
+- Epsilon-greedy: `epsilon 0.99 -> 0.1`, decay `0.999`
+- Batch size: `32`
+- Replay memory size: `10000`
+- Target network sync interval: every `10` train steps
 
-### 4.1 玩家手动模式
+### 6.2 Training Mechanisms
+- Replay memory random sampling to reduce temporal correlation
+- Periodic target network synchronization for stability
+- Per-episode epsilon decay
+- Negative-streak safeguard: if 10 consecutive episode rewards are negative, epsilon can be lifted to improve exploration
 
-```bash
-python main.py --mode human
-```
+## 7) Dashboard and Outputs
+- Reward curve + moving average
+- Pass rate curve (recent-window based)
+- Action distribution (recent episodes)
+- Real-time core metrics: epsilon, loss, reward, total steps, success ratio
+- Built-in save/load:
+  - localStorage training persistence
+  - model export/import (JSON)
 
-控制：
+## 8) Validation Checklist
+- Console logs print episode reward / epsilon / loss / success flag
+- Weight checksum delta printed periodically to verify network updates
+- Auto-training can continuously generate episodes up to configured maximum
 
-- `A`：左移
-- `D`：右移
-- `W`：原地跳跃
-- `Q`：左跳
-- `E`：右跳
+## 9) Submission Checklist
+Required files in this assignment package:
+- `code/index.html`
+- `code/styles.css`
+- `code/app.js`
+- `report/report.md`
+- `README.md`
 
-### 4.2 AI 自主模式
+Before final submission, ensure report screenshots and numeric results are based on your latest run.
 
-```bash
-python main.py --mode ai --model checkpoints/dqn_platformer.pth
-```
-
-### 4.3 人机同屏竞速
-
-```bash
-python main.py --mode race --model checkpoints/dqn_platformer.pth
-```
-
-## 5. 项目结构
-
-- `config.py`：全局常量、状态/动作定义、DQN固定超参数
-- `game_env.py`：平台闯关环境、奖励函数、30维状态编码
-- `dqn_agent.py`：Q网络、经验回放、ε-greedy 与训练逻辑
-- `train_dqn.py`：训练主程序与学习曲线绘图
-- `main.py`：Pygame交互界面（三种模式）
-
-## 6. 说明
-
-- 状态空间固定 30 维归一化向量。
-- 动作空间固定 5 个互斥动作：`0=左移、1=右移、2=原地跳跃、3=左跳、4=右跳`。
-- 奖励函数为分层正负奖励：进度奖励、金币奖励、通关奖励、时间惩罚、陷阱惩罚等。
